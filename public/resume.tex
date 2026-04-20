@@ -1,0 +1,112 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[left=0.6in, right=0.6in, top=0.6in, bottom=0.6in]{geometry}
+\usepackage{enumitem}
+\setlist[itemize]{noitemsep, topsep=2pt, leftmargin=10pt}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{url}
+\urlstyle{same}
+\usepackage{lmodern}
+\renewcommand{\familydefault}{\sfdefault}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=black,
+    citecolor=black
+}
+
+\pagenumbering{gobble}
+\setlength{\parindent}{0pt}
+\renewcommand{\baselinestretch}{1.1}
+
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+\titleformat{\section}{\bfseries\large}{}{0em}{}[\titlerule]
+
+\begin{document}
+\small
+
+%==========================
+% HEADER
+%==========================
+\begin{center}
+    {\huge \textbf{SUBHASH KUMAR JHA}}\\[6pt]
+    Rohtak, IN \textbar\ +91 6202622488 \textbar\
+    \href{mailto:subhashjhastm01@gmail.com}{\nolinkurl{subhashjhastm01@gmail.com}} \textbar\
+    \href{https://subhashjha.me}{\texttt{subhashjha.me}}
+\end{center}
+
+%==========================
+% SUMMARY
+%==========================
+\section*{SUMMARY}
+Full-Stack Software Engineer with hands-on experience building production-grade web applications using React.js, Next.js, TypeScript, and Node.js. Completed a fintech internship at Bluestock, delivering secure REST APIs and optimized PostgreSQL/MongoDB databases. Built and deployed three SaaS products with 100+ active users, integrating AI/LLM pipelines, Stripe billing, and real-time systems.
+
+%==========================
+% TECHNICAL SKILLS
+%==========================
+\section*{TECHNICAL SKILLS}
+\textbf{Programming Languages:} JavaScript (ES6+), TypeScript, Java, Python\\
+\textbf{Frontend Web Development:} HTML5, CSS3, React.js, Next.js, Tailwind CSS\\
+\textbf{Backend \& Databases:} Node.js, Express.js, REST APIs, MongoDB, PostgreSQL, Firebase, Supabase\\
+\textbf{Tools \& Platforms:} Git, GitHub, VS Code, NPM, Postman, Vercel\\
+\textbf{Dev Tools \& Practices:} System Design, GitHub Actions, CI/CD, Unit Testing
+
+%==========================
+% EXPERIENCE
+%==========================
+\section*{EXPERIENCE}
+
+\textbf{Software Developer Intern} \hfill \textit{Jan 2026 -- Mar 2026}\\
+\textit{Bluestock Fintech (Remote)}
+\begin{itemize}
+    \item Engineered secure RESTful APIs for financial transactions using Next.js, enforcing input validation and role-based access control.
+    \item Optimized MongoDB and PostgreSQL queries via indexed lookups and query refactoring, improving data retrieval performance across core workflows.
+    \item Implemented JWT authentication and secure coding practices including environment variable isolation to protect sensitive financial data.
+    \item Delivered production features across multiple Agile sprint cycles, coordinating with frontend, backend, and QA teams.
+\end{itemize}
+
+%==========================
+% PROJECTS
+%==========================
+\section*{PROJECTS}
+
+\textbf{Vartaa: Multilingual Team Chat Platform} \hfill \href{https://vartaa.vercel.app}{\texttt{vartaa.vercel.app}}
+\begin{itemize}
+    \item Built a real-time chat app using Next.js, React, TypeScript, and Convex with WebSocket and live presence tracking.
+    \item Developed a multilingual AI pipeline using Sarvam AI and Google Gemini API for voice transcription and translation.
+    \item Implemented LLM features including thread summarization, smart replies, and task extraction via Google Generative AI SDK.
+    \item Designed a UI component library with Tailwind CSS and Radix UI, deployed on Vercel with CI/CD.
+\end{itemize}
+
+\vspace{2pt}
+
+\textbf{ShortIQ} \hfill \href{https://short-iq.vercel.app}{\texttt{short-iq.vercel.app}}
+\begin{itemize}
+    \item Built a full-stack SaaS platform automating short-form video creation from AI script generation to rendering and social publishing (YouTube, TikTok, Instagram).
+    \item Implemented event-driven background job processing with Inngest and Creatomate for reliable, scalable async video rendering.
+    \item Developed a multi-tier billing system (\$0 / \$7 / \$10) using Stripe and Clerk with role-based access control.
+    \item Designed a mobile-first dashboard with Supabase backend, Framer Motion animations, and glassmorphism UI.
+\end{itemize}
+
+\vspace{2pt}
+
+\textbf{InvestIQ: AI-Powered Investment Assistant} \hfill \href{https://my-investiq.vercel.app}{\texttt{my-investiq.vercel.app}}
+\begin{itemize}
+    \item Built an AI-driven advisory engine using Gemini 1.5 Flash to generate personalized, three-tier risk-profile investment strategies.
+    \item Developed real-time financial calculators for SIP/EMI, replacing error-prone manual calculations with interactive growth visualizations via Recharts.
+    \item Architected secure BaaS infrastructure using Appwrite for reliable session management and isolated user investment profile synchronization.
+    \item Engineered a low-latency market tracker with 30-minute caching to reduce API overhead by 60\% while maintaining real-time gold price precision.
+\end{itemize}
+
+%==========================
+% EDUCATION
+%==========================
+\section*{EDUCATION}
+
+\textbf{Maharishi Dayanand University, Rohtak} \hfill \textit{2022 -- 2026}\\
+Bachelor of Technology, Computer Science Engineering \hfill \textbf{Percentage:} 72\%
+
+\end{document}
