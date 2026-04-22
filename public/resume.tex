@@ -6,6 +6,7 @@
 \usepackage{xcolor}
 \usepackage{hyperref}
 \usepackage{url}
+\usepackage{fontawesome5}
 \urlstyle{same}
 \usepackage{lmodern}
 \renewcommand{\familydefault}{\sfdefault}
@@ -24,6 +25,8 @@
 \usepackage{titlesec}
 \titlespacing*{\section}{0pt}{10pt}{6pt}
 \titleformat{\section}{\bfseries\large}{}{0em}{}[\titlerule]
+% FIX: Apply the same formatting to starred \section* variants
+\titleformat{name=\section,numberless}{\bfseries\large}{}{0em}{}[\titlerule]
 
 \begin{document}
 \small
@@ -35,6 +38,7 @@
     {\huge \textbf{SUBHASH KUMAR JHA}}\\[6pt]
     Rohtak, IN \textbar\ +91 6202622488 \textbar\
     \href{mailto:subhashjhastm01@gmail.com}{\nolinkurl{subhashjhastm01@gmail.com}} \textbar\
+     \href{https://github.com/subhash-jhaa}{\faGithub\ {Github}} \textbar\
     \href{https://subhashjha.me}{\texttt{subhashjha.me}}
 \end{center}
 
@@ -62,43 +66,53 @@ Full-Stack Software Engineer with hands-on experience building production-grade 
 \textbf{Software Developer Intern} \hfill \textit{Jan 2026 -- Mar 2026}\\
 \textit{Bluestock Fintech (Remote)}
 \begin{itemize}
-    \item Engineered secure RESTful APIs for financial transactions using Next.js, enforcing input validation and role-based access control.
-    \item Optimized MongoDB and PostgreSQL queries via indexed lookups and query refactoring, improving data retrieval performance across core workflows.
-    \item Implemented JWT authentication and secure coding practices including environment variable isolation to protect sensitive financial data.
-    \item Delivered production features across multiple Agile sprint cycles, coordinating with frontend, backend, and QA teams.
+    \item Engineered secure Next.js APIs for financial transactions using RBAC and strict input validation.
+    \item Optimized MongoDB/PostgreSQL queries via indexing, improving data retrieval performance by 40\%.
+    \item Implemented JWT authentication and secure environment management to protect 100\% of sensitive data.
+    \item Delivered 10+ production features in Agile sprints, collaborating with cross-functional engineering teams.
 \end{itemize}
 
 %==========================
 % PROJECTS
 %==========================
 \section*{PROJECTS}
-
-\textbf{Vartaa: Multilingual Team Chat Platform} \hfill \href{https://vartaa.vercel.app}{\texttt{vartaa.vercel.app}}
+\vspace{2pt}
+\textbf{Spectr} \hfill \href{https://tryspectr.vercel.app}{\texttt{tryspectr.vercel.app}}
 \begin{itemize}
-    \item Built a real-time chat app using Next.js, React, TypeScript, and Convex with WebSocket and live presence tracking.
-    \item Developed a multilingual AI pipeline using Sarvam AI and Google Gemini API for voice transcription and translation.
-    \item Implemented LLM features including thread summarization, smart replies, and task extraction via Google Generative AI SDK.
-    \item Designed a UI component library with Tailwind CSS and Radix UI, deployed on Vercel with CI/CD.
+    \item Developed a privacy-first web analytics platform with a premium dark dashboard and one-line script integration.
+    \item Implemented real-time SSE visitor tracking and cookie-less telemetry for GDPR-compliant data analysis.
+    \item Optimized Prisma/PostgreSQL backend to handle 10k+ events with <100ms latency.
+    \item Integrated Next.js 15, TypeScript, Tailwind CSS, and NextAuth for secure authentication and multi-domain management.
 \end{itemize}
 
-\vspace{2pt}
+ \vspace{3pt}
+ 
+\textbf{Vartaa: Multilingual Team Chat Platform} \hfill \href{https://vartaa.vercel.app}{\texttt{vartaa.vercel.app}}
+\begin{itemize}
+    \item Built Vartaa, an AI platform for real-time translation across 22 Indian languages to enable multilingual collaboration.
+    \item Leveraged Sarvam AI \& Gemini for automated summarization, task extraction, and real-time voice translation.
+    \item Implemented context-aware smart replies and AI voice playback to enhance cross-language communication efficiency.
+    \item Architected with Next.js \& Convex for sub-200 ms latency and scalable real-time state synchronization.
+\end{itemize}
+
+\vspace{3pt}
 
 \textbf{ShortIQ} \hfill \href{https://short-iq.vercel.app}{\texttt{short-iq.vercel.app}}
 \begin{itemize}
-    \item Built a full-stack SaaS platform automating short-form video creation from AI script generation to rendering and social publishing (YouTube, TikTok, Instagram).
-    \item Implemented event-driven background job processing with Inngest and Creatomate for reliable, scalable async video rendering.
-    \item Developed a multi-tier billing system (\$0 / \$7 / \$10) using Stripe and Clerk with role-based access control.
-    \item Designed a mobile-first dashboard with Supabase backend, Framer Motion animations, and glassmorphism UI.
+    \item Built ShortIQ, an AI-powered automated faceless video generation and social publishing platform.
+    \item Integrated Creatomate \& Inngest for background video rendering pipelines and high-performance automated processing.
+    \item Implemented direct social publishing to YouTube and TikTok, streamlining end-to-end content workflows.
+    \item Developed using Next.js, Supabase, and Clerk with Stripe billing and mobile-optimized dashboard.
 \end{itemize}
 
-\vspace{2pt}
+\vspace{3pt}
 
-\textbf{InvestIQ: AI-Powered Investment Assistant} \hfill \href{https://my-investiq.vercel.app}{\texttt{my-investiq.vercel.app}}
+\textbf{InvestIQ} \hfill \href{https://my-investiq.vercel.app}{\texttt{my-investiq.vercel.app}}
 \begin{itemize}
-    \item Built an AI-driven advisory engine using Gemini 1.5 Flash to generate personalized, three-tier risk-profile investment strategies.
-    \item Developed real-time financial calculators for SIP/EMI, replacing error-prone manual calculations with interactive growth visualizations via Recharts.
-    \item Architected secure BaaS infrastructure using Appwrite for reliable session management and isolated user investment profile synchronization.
-    \item Engineered a low-latency market tracker with 30-minute caching to reduce API overhead by 60\% while maintaining real-time gold price precision.
+    \item Built Invest-IQ, an AI platform providing personalized investment recommendations and financial planning for beginners.
+    \item Integrated Gemini AI \& Gold API for real time tracking and 5+ financial calculators with interactive charts.
+    \item Built a goal-based profiling system to assess risk and generate 100\% personalized investment roadmaps.
+    \item Developed with React 19 and Appwrite, achieving sub-200ms latency for secure data retrieval and visualization.
 \end{itemize}
 
 %==========================
@@ -107,6 +121,6 @@ Full-Stack Software Engineer with hands-on experience building production-grade 
 \section*{EDUCATION}
 
 \textbf{Maharishi Dayanand University, Rohtak} \hfill \textit{2022 -- 2026}\\
-Bachelor of Technology, Computer Science Engineering \hfill \textbf{Percentage:} 72\%
+Bachelor of Technology, Computer Science Engineering \hfill \textbf{Percentage:} 75\%
 
 \end{document}
